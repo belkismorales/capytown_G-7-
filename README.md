@@ -85,3 +85,59 @@ no una medicion del robot fisico.
 
 Consultar docs/guia_laboratorio_rc1.md antes de las
 pruebas con el robot fisico.
+
+## ROS_DOMAIN_ID
+
+En la verificacion final de Ubuntu, la variable
+ROS_DOMAIN_ID no estaba definida. ROS 2 utiliza
+normalmente el dominio 0 en ese caso.
+
+El dominio utilizado durante cada ejecucion historica
+del simulador no fue registrado explicitamente.
+
+Para verificar el dominio actual:
+
+    echo "${ROS_DOMAIN_ID:-0}"
+
+Antes de conectar el robot fisico, comprobar que
+la computadora y el robot utilicen el mismo dominio.
+No cambiar ROS_DOMAIN_ID sin verificar primero
+la configuracion del laboratorio.
+
+## Condiciones del simulador
+
+### Experimento 1: recta de 2 m
+
+- Desplazamiento lateral inicial: line_offset = 0.10 m.
+- Sesgo angular inyectado: bias_w = 0.06 rad/s.
+- Nivel de ruido: low.
+- Controladores comparados: Bang-bang, P, PD y PID.
+
+### Experimento 2: giro de 90 grados
+
+- Nivel de ruido: low.
+- Se compararon seis configuraciones de control angular.
+- Las metricas incluyen sobreimpulso, tiempo de
+  asentamiento y error angular final.
+
+### Experimento 3: cuadrado de 2 x 2 m
+
+- Controladores: 3A abierto, 3B PID y 3C PID+Ki.
+- Tres corridas por controlador con ruido low.
+- Pruebas adicionales con ruido medium.
+- bias_w documentado: 0.03 rad/s para 3B
+  y 0.05 rad/s para 3C.
+- Los niveles low y medium identifican las
+  configuraciones de ruido utilizadas.
+- No se atribuye la diferencia entre 3B y 3C
+  exclusivamente a Ki porque tambien cambia bias_w.
+
+### Interpretacion de los datos
+
+- /odom: estimacion de posicion por odometria.
+- /sim/pose: posicion de referencia del simulador.
+- Los CSV que incluyen "real" en su nombre pueden
+  referirse a /sim/pose; NO son mediciones fisicas.
+- El cierre fisico del robot se medira con cinta metrica.
+- Los valores numericos internos de ruido low y medium
+  no quedaron documentados en estas evidencias.
