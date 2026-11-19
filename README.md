@@ -47,17 +47,41 @@ Para preparar ROS 2:
 - Medir errores reales con cinta metrica.
 - Completar hoja de resultados e informe.pdf.
 
-## Integrantes y roles
+## Responsabilidad del proyecto
 
-- Integracion: pendiente
-- Control: pendiente
-- Planificacion: pendiente
-- Percepcion: pendiente
+Proyecto desarrollado individualmente.
+Las actividades de integracion, control, planificacion
+y percepcion son realizadas por una sola estudiante.
 
 ## Entrega final
 
-Pendientes: sim_log.txt, captura de rqt_graph,
-informe.pdf, pruebas fisicas y tag v1.0-rc1.
+Evidencias del simulador disponibles:
+- sim_log.txt
+- docs/rc1_rqt_graph.jpeg
+- csv/metricas_simulador.csv
+- csv/resumen_exp3_simulador.csv
+- csv/hoja_resultados.csv
+- plots/
+
+Pendientes: pruebas fisicas, completar informe.pdf
+y crear el tag v1.0-rc1.
 
 Las ganancias del simulador deben validarse
 antes de aplicarlas al robot fisico.
+
+
+## Resultados destacados del simulador
+
+- Recta 1D (PID): error final de 0.24 cm y asentamiento de 5.833 s.
+- Giro 2F: sobreimpulso de 0%, asentamiento de 1.214 s
+  y error final de 0.395 grados.
+- Cuadrado 3C con ruido bajo: cierre promedio de 22.03 cm
+  medido mediante /sim/pose.
+
+El topico /sim/pose representa la referencia del simulador,
+no una medicion del robot fisico.
+
+## Guia para el laboratorio
+
+Consultar docs/guia_laboratorio_rc1.md antes de las
+pruebas con el robot fisico.

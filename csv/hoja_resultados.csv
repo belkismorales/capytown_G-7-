@@ -1,14 +1,14 @@
 prueba,planta,noise,kp,ki,kd,kp_yaw,ki_yaw,kd_yaw,prediccion,cierre_odom_cm,cierre_real_cm,yaw_acum_deg,notas
-1A,simulador,low,,,,,,,,,,,Bang-bang; error lateral medio 6.84 cm; FIN
-1B,simulador,low,3.0,0.0,0.0,,,,,,,,P; error lateral medio 6.12 cm; FIN
-1C,simulador,low,3.0,0.0,4.0,,,,,,,,PD; error lateral medio 3.14 cm; FIN
-1D,simulador,low,3.0,0.5,4.0,,,,,,,,PID; error lateral medio 2.51 cm; error final 0.24 cm; FIN
-2A,simulador,low,,,,1.0,,0.0,,,,,Giro 90; error final 1.501 grados; tiempo 4.119 s; FIN
-2B,simulador,low,,,,10.0,,0.0,,,,,Giro 90; error final 0.006 grados; tiempo 1.576 s; FIN
-2C,simulador,low,,,,10.0,,1.2,,,,,Giro 90; error final 0.413 grados; tiempo 2.144 s; FIN
-2D,simulador,low,,,,7.0,,1.2,,,,,Giro 90; error final 0.011 grados; tiempo 1.834 s; FIN
-2E,simulador,low,,,,7.0,,0.8,,,,,Giro 90; error final 0.516 grados; tiempo 1.508 s; FIN
-2F,simulador,low,,,,7.0,,0.4,,,,,Giro 90; error final 0.395 grados; tiempo 1.514 s; FIN
+1A,simulador,low,,,,,,,,,,,Bang-bang; error lateral medio 6.84 cm; FIN; metricas calculadas: asentamiento +/-2cm=10.352 s
+1B,simulador,low,3.0,0.0,0.0,,,,,,,,P; error lateral medio 6.12 cm; FIN; metricas calculadas: asentamiento +/-2cm=10.281 s
+1C,simulador,low,3.0,0.0,4.0,,,,,,,,PD; error lateral medio 3.14 cm; FIN; metricas calculadas: asentamiento +/-2cm=no alcanzado
+1D,simulador,low,3.0,0.5,4.0,,,,,,,,PID; error lateral medio 2.51 cm; error final 0.24 cm; FIN; metricas calculadas: asentamiento +/-2cm=5.833 s
+2A,simulador,low,,,,1.0,,0.0,,,,,Giro 90; error final 1.501 grados; tiempo 4.119 s; FIN; metricas calculadas: sobreimpulso=0.0%; asentamiento +/-2deg=3.853 s; error final=1.501 deg
+2B,simulador,low,,,,10.0,,0.0,,,,,Giro 90; error final 0.006 grados; tiempo 1.576 s; FIN; metricas calculadas: sobreimpulso=5.488%; asentamiento +/-2deg=1.276 s; error final=0.006 deg
+2C,simulador,low,,,,10.0,,1.2,,,,,Giro 90; error final 0.413 grados; tiempo 2.144 s; FIN; metricas calculadas: sobreimpulso=0.0%; asentamiento +/-2deg=1.877 s; error final=0.412 deg
+2D,simulador,low,,,,7.0,,1.2,,,,,Giro 90; error final 0.011 grados; tiempo 1.834 s; FIN; metricas calculadas: sobreimpulso=7.672%; asentamiento +/-2deg=1.567 s; error final=0.011 deg
+2E,simulador,low,,,,7.0,,0.8,,,,,Giro 90; error final 0.516 grados; tiempo 1.508 s; FIN; metricas calculadas: sobreimpulso=0.0%; asentamiento +/-2deg=1.242 s; error final=0.515 deg
+2F,simulador,low,,,,7.0,,0.4,,,,,Giro 90; error final 0.395 grados; tiempo 1.514 s; FIN; metricas calculadas: sobreimpulso=0.0%; asentamiento +/-2deg=1.214 s; error final=0.395 deg
 3A_low_run1,simulador,low,,,,,,,,,26.76,,Cuadrado 2x2 m; cierre real simulado; FIN
 3A_low_run2,simulador,low,,,,,,,,,13.64,,Cuadrado 2x2 m; cierre real simulado; FIN
 3A_low_run3,simulador,low,,,,,,,,,29.42,,Cuadrado 2x2 m; cierre real simulado; FIN

@@ -1,0 +1,11 @@
+prueba,tipo,error_medio_cm,error_final_cm,error_final_deg,sobreimpulso_pct,asentamiento_s,criterio,estado
+1A,recta,6.841,0.59,,,10.352,error lateral +/- 2 cm,FIN
+1B,recta,6.118,0.74,,,10.281,error lateral +/- 2 cm,FIN
+1C,recta,3.143,2.12,,,,error lateral +/- 2 cm,FIN
+1D,recta,2.511,0.24,,,5.833,error lateral +/- 2 cm,FIN
+2A,giro_90,,,1.501,0.0,3.853,error angular +/- 2 grados,FIN
+2B,giro_90,,,0.006,5.488,1.276,error angular +/- 2 grados,FIN
+2C,giro_90,,,0.412,0.0,1.877,error angular +/- 2 grados,FIN
+2D,giro_90,,,0.011,7.672,1.567,error angular +/- 2 grados,FIN
+2E,giro_90,,,0.515,0.0,1.242,error angular +/- 2 grados,FIN
+2F,giro_90,,,0.395,0.0,1.214,error angular +/- 2 grados,FIN

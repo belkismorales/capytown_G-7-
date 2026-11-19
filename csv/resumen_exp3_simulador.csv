@@ -1,0 +1,7 @@
+prueba,noise,corridas_validas,cierre_real_promedio_cm,cierres_reales_cm,observaciones
+3A,low,3,23.27,26.76;13.64;29.42,
+3B,low,3,45.63,36.43;76.41;24.06,
+3C,low,3,22.03,4.95;51.38;9.77,
+3A,medium,1,71.27,71.27,FIN
+3B,medium,1,118.72,118.72,FIN; run3
+3C,medium,1,41.76,41.76,FIN
