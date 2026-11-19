@@ -1,0 +1,47 @@
+# RC-1 - Control PID
+# Grupo 7
+# Configuracion documentada de los experimentos.
+# Los valores del robot fisico se completaran en laboratorio.
+
+simulador:
+  recta_1d:
+    controlador: PID
+    kp: 3.0
+    ki: 0.5
+    kd: 4.0
+    line_offset: 0.10
+    bias_w: 0.06
+    noise: low
+
+  giro_2f:
+    kp_yaw: 7.0
+    ki_yaw: 0.0
+    kd_yaw: 0.4
+    objetivo_deg: 90.0
+    noise: low
+
+  cuadrado_3b:
+    controlador: PID
+    kp: 3.0
+    ki: 0.0
+    kd: 4.0
+    kp_yaw: 7.0
+    ki_yaw: 0.0
+    kd_yaw: 0.4
+    bias_w: 0.03
+
+  cuadrado_3c:
+    controlador: PID_con_integral
+    kp: 3.0
+    ki: 0.5
+    kd: 4.0
+    kp_yaw: 7.0
+    ki_yaw: 0.0
+    kd_yaw: 0.4
+    bias_w: 0.05
+
+robot_fisico:
+  estado: pendiente_de_pruebas
+  # Registrar las ganancias reales despues de calibrar.
+  # No asumir que las ganancias del simulador
+  # funcionan sin ajustes en el robot fisico.

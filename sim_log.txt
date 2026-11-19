@@ -1,0 +1,61 @@
+=== TOPICOS DEL SIMULADOR ===
+/beep
+/camera/camera_info
+/camera/image_raw
+/cmd_vel
+/goal_pose
+/imu/data_raw
+/initialpose
+/joint_states
+/map
+/map_updates
+/odom
+/parameter_events
+/race/hud
+/race/hud_array
+/race/track_markers
+/robot_description
+/rosout
+/scan
+/sim/collision
+/sim/pose
+/tf
+/tf_static
+/vel_raw
+/voltage
+=== FRECUENCIA DE ODOM ===
+average rate: 38.379
+	min: 0.006s max: 0.084s std dev: 0.01559s window: 40
+average rate: 35.286
+	min: 0.004s max: 0.093s std dev: 0.01902s window: 73
+average rate: 38.310
+	min: 0.001s max: 0.093s std dev: 0.01661s window: 118
+average rate: 38.427
+	min: 0.001s max: 0.093s std dev: 0.01645s window: 158
+average rate: 37.500
+	min: 0.001s max: 0.093s std dev: 0.01711s window: 192
+average rate: 36.433
+	min: 0.001s max: 0.093s std dev: 0.01797s window: 223
+average rate: 36.093
+	min: 0.001s max: 0.093s std dev: 0.01791s window: 258
+average rate: 35.606
+	min: 0.001s max: 0.093s std dev: 0.01808s window: 291
+=== FRECUENCIA /ODOM ===
+Frecuencia observada anteriormente: aproximadamente 43.7 Hz
+=== POSE REAL DEL SIMULADOR ===
+header:
+  stamp:
+    sec: 1794515935
+    nanosec: 772667069
+  frame_id: map
+pose:
+  position:
+    x: 1.0
+    y: 1.0
+    z: 0.0
+  orientation:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+---
